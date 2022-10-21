@@ -6,10 +6,10 @@ public struct FirstPackage: View {
     @Binding var selectedIndex: Int
     @Namespace private var menuItemTransition
 
-    var menuItems = [ "Travel", "Nature", "Architecture" ]
+    var menuItems = [ "One", "Two", "Three" ]
 
     // Custom init with public access level
-    public init(selectedIndex: Binding<Int>, menuItems: [String] = [ "Travel", "Nature", "Architecture" ]) {
+    public init(selectedIndex: Binding<Int>, menuItems: [String] = [ "One", "Two", "Three" ]) {
         self._selectedIndex = selectedIndex
         self.menuItems = menuItems
     }
